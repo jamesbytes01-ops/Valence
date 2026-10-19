@@ -99,9 +99,14 @@ export function renderHeader(currentRoute = "#/") {
                       <h5>Zero-Telemetry Systems</h5>
                       <p>All software and antivirus binaries undergo local offline cryptographic key signing.</p>
                     </div>
-                    <a href="#/security" class="btn btn-primary btn-sm">
-                      Inspect Antivirus &rarr;
-                    </a>
+                    <div style="display: flex; gap: 0.5rem; margin-top: 0.75rem; flex-wrap: wrap;">
+                      <a href="#/security" class="btn btn-primary btn-sm">
+                        Inspect Antivirus &rarr;
+                      </a>
+                      <a href="#/operations" class="btn btn-secondary btn-sm">
+                        Operations &rarr;
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -134,6 +139,12 @@ export function renderHeader(currentRoute = "#/") {
             <li class="nav-item">
               <a href="#/deals" class="nav-link ${currentRoute === '#/deals' ? 'active' : ''}">
                 Deals <span class="nav-badge-deal">SAVE 35%</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#/operations" class="nav-link ${currentRoute.startsWith('#/operations') ? 'active' : ''}">
+                Operations
               </a>
             </li>
           </ul>

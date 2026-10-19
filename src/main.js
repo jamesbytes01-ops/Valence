@@ -17,6 +17,7 @@ import { renderEbooksPage } from "./pages/EbooksPage.js";
 import { renderDealsPage } from "./pages/DealsPage.js";
 import { renderVaultPage } from "./pages/VaultPage.js";
 import { renderProductDetailPage } from "./pages/ProductDetailPage.js";
+import { renderOperationsPage, setOperationsActiveTab, getOperationsActiveTab } from "./pages/OperationsPage.js";
 
 // Global Modal & Drawer State
 let activeModal = null; // 'checkout', 'search'
@@ -61,6 +62,10 @@ function renderApp() {
     mainContent = renderDealsPage();
   } else if (route === "#/vault") {
     mainContent = renderVaultPage();
+  } else if (route.startsWith("#/operations")) {
+    const urlParams = new URLSearchParams(route.split("?")[1] || "");
+    const tab = urlParams.get("tab") || "pgp";
+    mainContent = renderOperationsPage(tab);
   } else {
     mainContent = renderHomePage();
   }
@@ -191,7 +196,51 @@ function bindEvents() {
     };
   });
 
-  // 5. Security Page Product Switcher & Multi-Device Tier Selector
+  // 5. Operations Page Tab Switching & Interactive Sandbox
+  document.querySelectorAll(".op-tab-btn").forEach(btn => {
+    btn.onclick = () => {
+      const tab = btn.getAttribute("data-op-tab");
+      setOperationsActiveTab(tab);
+      window.location.hash = `#/operations?tab=${tab}`;
+    };
+  });
+
+  const copyPgpBtn = document.getElementById("copy-pgp-key-btn");
+  if (copyPgpBtn) {
+    copyPgpBtn.onclick = () => {
+      const block = document.getElementById("raw-pgp-block");
+      if (block) {
+        navigator.clipboard.writeText(block.innerText).catch(() => {});
+        store.showToast("Valence PGP Master Key copied to clipboard", "success");
+      }
+    };
+  }
+
+  const runApiBtn = document.getElementById("run-api-sandbox-btn");
+  if (runApiBtn) {
+    runApiBtn.onclick = () => {
+      const out = document.getElementById("api-sandbox-output");
+      if (out) {
+        out.innerText = "Dispatching TLS 1.3 request to https://api.valence.io/v1/licenses/issue...\nVerifying Ed25519 token signatures...";
+        setTimeout(() => {
+          out.innerText = JSON.stringify({
+            status: "success",
+            timestamp: new Date().toISOString(),
+            license_id: "lic_" + Math.random().toString(36).substring(2, 9),
+            product: "KernelWorks Studio",
+            seats_provisioned: 5,
+            ed25519_token: "VKEY-KWST-" + Math.random().toString(36).substring(2, 6).toUpperCase() + "-" + Math.random().toString(36).substring(2, 6).toUpperCase(),
+            sha256_checksum: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+            tax_invoice_number: "VAL-2026-INV-" + Math.floor(1000 + Math.random() * 9000),
+            signature_verification: "VALID // SIGNED_BY_0x7F8B92"
+          }, null, 2);
+          store.showToast("Sandbox API test request succeeded (200 OK)", "success");
+        }, 350);
+      }
+    };
+  }
+
+  // 6. Security Page Product Switcher & Multi-Device Tier Selector
   document.querySelectorAll(".sec-tab-btn").forEach(tab => {
     tab.onclick = () => {
       const secId = tab.getAttribute("data-sec-id");

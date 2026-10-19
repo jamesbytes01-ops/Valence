@@ -48,8 +48,8 @@ export function renderFooter() {
               <li><a href="#/vault">My License Vault</a></li>
               <li><a href="#/deals">Commercial Deals &amp; Bundles</a></li>
               <li><a href="#/security">Multi-Device Deployment Guide</a></li>
-              <li><a href="#/">Offline Key Validation Protocol</a></li>
-              <li><a href="#/software">SHA-256 Binary Integrity</a></li>
+              <li><a href="#/operations?tab=airgap">Offline Key Validation Protocol</a></li>
+              <li><a href="#/operations?tab=pgp">SHA-256 Binary Integrity</a></li>
             </ul>
           </div>
 
@@ -57,11 +57,11 @@ export function renderFooter() {
           <div class="footer-col">
             <h5>Technical Operations</h5>
             <ul class="footer-link-list">
-              <li><a href="#/">PGP Public Key (0x7F8B92)</a></li>
-              <li><a href="#/">Air-gapped Key Generation</a></li>
-              <li><a href="#/">Refund &amp; Revocation Protocol</a></li>
-              <li><a href="#/">Automated Invoicing (GST)</a></li>
-              <li><a href="#/">API Developer Sandbox</a></li>
+              <li><a href="#/operations?tab=pgp">PGP Public Key (0x7F8B92)</a></li>
+              <li><a href="#/operations?tab=airgap">Air-gapped Key Generation</a></li>
+              <li><a href="#/operations?tab=refund">Refund &amp; Revocation Protocol</a></li>
+              <li><a href="#/operations?tab=invoicing">Automated Invoicing (GST)</a></li>
+              <li><a href="#/operations?tab=api">API Developer Sandbox</a></li>
             </ul>
           </div>
 
