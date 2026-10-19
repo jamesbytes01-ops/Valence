@@ -14,7 +14,7 @@ export function renderFooter() {
                 </svg>
               </div>
               <span style="font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; color: #f8fafc; letter-spacing: -0.01em;">
-                VALENCE<span style="color: #38bdf8;">.IO</span>
+                VALENCE<span style="color: #38bdf8;"> IO</span>
               </span>
             </a>
 

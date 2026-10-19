@@ -18,7 +18,7 @@ export const PRODUCTS = [
     architecture: "x86_64, aarch64, riscv64",
     sha256Checksum: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
     downloadSize: "284 MB installer",
-    imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Windows 11 / macOS 13+ / Ubuntu 22.04 LTS+",
       ram: "16 GB recommended (8 GB minimum)",
@@ -162,7 +162,7 @@ export const PRODUCTS = [
     architecture: "Apple Silicon, x86_64 AVX2",
     sha256Checksum: "2c624232cdd221771294dfbb310aca000a0df6ac8b66b696d90ef9f8b1b0ca32",
     downloadSize: "410 MB bundle",
-    imageUrl: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Windows 11 (64-bit) / macOS Sonoma+",
       ram: "16 GB RAM with dedicated GPU",
@@ -206,7 +206,7 @@ export const PRODUCTS = [
     architecture: "Universal 64-bit",
     sha256Checksum: "19581e27de7ced00ff1ce50b2047e7a567c76b1cbaebabe5ef03f7c3017bb5b7",
     downloadSize: "78 MB lightweight",
-    imageUrl: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Any modern desktop OS",
       ram: "2 GB RAM",
@@ -250,7 +250,7 @@ export const PRODUCTS = [
     architecture: "x86_64, arm64",
     sha256Checksum: "3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855e",
     downloadSize: "64 MB native",
-    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Windows 10/11, macOS 12+, Linux",
       ram: "8 GB RAM (16 GB for >50GB datasets)",
@@ -294,7 +294,7 @@ export const PRODUCTS = [
     architecture: "Digital DRM-free Asset",
     sha256Checksum: "7d1b327b5e40e69b596200234a413d7d4c72d56a31c59bb7f1082c5f74e6f9d2",
     downloadSize: "420 MB PDF + Repos",
-    imageUrl: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1532012164546-f432f2e37b73?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Any PDF/ePub reader or web browser",
       ram: "N/A",
@@ -338,7 +338,7 @@ export const PRODUCTS = [
     architecture: "x86_64, arm64",
     sha256Checksum: "9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08",
     downloadSize: "210 MB installer",
-    imageUrl: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Windows Server / Windows 11 / Linux (Debian, RHEL) / macOS",
       ram: "8 GB RAM",
@@ -388,7 +388,7 @@ export const PRODUCTS = [
     architecture: "Universal 64-bit & ARM",
     sha256Checksum: "c1829e701a23849f1295b77821049ecbb481a890982312bca0921098efba4312",
     downloadSize: "52 MB native",
-    imageUrl: "https://images.unsplash.com/photo-1510511459019-5dda7724fd87?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "All desktop & mobile operating systems",
       ram: "1 GB RAM",
@@ -438,7 +438,7 @@ export const PRODUCTS = [
     architecture: "x86_64, Apple Silicon M-series",
     sha256Checksum: "90b2138a7c2901928471bc6293810efa82931bcdd82736192847291038bc2910",
     downloadSize: "44 MB native",
-    imageUrl: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1584433144859-1fc3ab64a957?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Windows 10/11, macOS 12+, Linux",
       ram: "2 GB RAM",
@@ -488,7 +488,7 @@ export const PRODUCTS = [
     architecture: "x86_64, armv7, aarch64",
     sha256Checksum: "4b227777d4dd1fc61c6f884f48641d02b4d121d3fd328cb08b5531fcacdabf8a",
     downloadSize: "48 MB native",
-    imageUrl: "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Windows, macOS, Linux, Synology/QNAP NAS",
       ram: "2 GB RAM",
@@ -532,7 +532,7 @@ export const PRODUCTS = [
     architecture: "x86_64, arm64",
     sha256Checksum: "ef2d127de37b942baad06145e54b0c619a1f22327b2ebbcfbec78f5564afe39d",
     downloadSize: "115 MB installer",
-    imageUrl: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Windows 10/11, macOS 12+, Linux",
       ram: "4 GB RAM",
@@ -664,7 +664,7 @@ export const PRODUCTS = [
     architecture: "Digital PDF & Markdown Repo",
     sha256Checksum: "2aae6c35c94fcfb415dbe95f408b9ce91ee846edef54109fa4f011b697805626",
     downloadSize: "230 MB bundle",
-    imageUrl: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=800&q=80",
+    imageUrl: "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?auto=format&fit=crop&w=800&q=80",
     systemRequirements: {
       os: "Any PDF / EPUB reader",
       ram: "N/A",

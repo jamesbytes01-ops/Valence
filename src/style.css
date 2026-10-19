@@ -217,35 +217,7 @@ input, select, textarea {
   50% { opacity: 0.45; transform: scale(0.85); }
 }
 
-/* Top System Announcement Bar */
-.top-system-bar {
-  background: #ffffff;
-  border-bottom: 1px solid var(--border-subtle);
-  font-size: 0.76rem;
-  font-family: var(--font-mono);
-  color: var(--text-muted);
-  padding: 0.45rem 0;
-  position: relative;
-  z-index: 40;
-}
-.top-system-bar .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.top-system-bar-left {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.top-system-bar-right {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-.top-system-bar a:hover {
-  color: var(--accent-lime);
-}
+/* Top System Announcement Bar removed per user request */
 
 /* ==========================================================================
    HEADER & NAVIGATION (Uncrowded, Spacious, Polished)
@@ -629,17 +601,24 @@ input, select, textarea {
 }
 
 .hero-section {
-  padding: 4.5rem 0 3.5rem;
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+  align-items: center;
+  padding: 3.5rem 0;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border-subtle);
   background: #ffffff;
 }
 
+.hero-section .container {
+  width: 100%;
+}
+
 .hero-grid {
   display: grid;
   grid-template-columns: 1.15fr 1fr;
-  gap: 3.5rem;
+  gap: 4rem;
   align-items: center;
 }
 

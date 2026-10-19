@@ -82,6 +82,57 @@ export function renderVaultPage() {
           `}
         </div>
       </section>
+
+      <!-- Offline Verification & CLI Airgap Protocol -->
+      <section class="section-wrapper alt-bg">
+        <div class="container">
+          <div class="section-header-block">
+            <div>
+              <h2 class="section-heading-title">Offline Cryptographic Key Validation Protocol</h2>
+              <p class="section-subtext">
+                Verify digital signatures and run tools in strictly isolated corporate air-gapped workstations without external internet access
+              </p>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1rem;">
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-high);">
+                Airgap Terminal Activation Command
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55; margin-bottom: 1rem;">
+                Run this command on your air-gapped terminal to validate cryptographic hashes and generate an offline hardware enrollment token:
+              </p>
+              <div style="background: #091326; color: #38bdf8; padding: 1rem; border-radius: var(--radius-xs); font-family: var(--font-mono); font-size: 0.82rem; overflow-x: auto;">
+                $ valence-cli activate --key "YOUR-VAULT-TOKEN" --airgap --offline
+              </div>
+            </div>
+
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--text-high);">
+                Local Browser Vault Encryption
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55; margin-bottom: 0.75rem;">
+                Your license records and cryptographic keyfiles are stored client-side in encrypted localStorage partitions.
+              </p>
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem; color: var(--text-medium);">
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: var(--accent-lime); font-weight: 700;">✓</span>
+                  <span>Zero telemetry or biometric telemetry uploaded</span>
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: var(--accent-lime); font-weight: 700;">✓</span>
+                  <span>Instant JSON and CSV license asset export available</span>
+                </li>
+                <li style="display: flex; align-items: center; gap: 0.5rem;">
+                  <span style="color: var(--accent-lime); font-weight: 700;">✓</span>
+                  <span>Perpetual entitlement archiving with free installer redownloads</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   `;
 }

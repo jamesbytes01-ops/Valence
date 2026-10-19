@@ -82,6 +82,98 @@ export function renderDealsPage() {
           </div>
         </div>
       </section>
+
+      <!-- Transparent Commercial Pricing Guarantees -->
+      <section class="section-wrapper alt-bg">
+        <div class="container">
+          <div class="section-header-block">
+            <div>
+              <h2 class="section-heading-title">Transparent Commercial Pricing Guarantees</h2>
+              <p class="section-subtext">
+                Direct developer pricing with zero hidden renewal markups and full Indian GST input tax credit compliance
+              </p>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1rem;">
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-lime); font-weight: 700; display: block; margin-bottom: 0.5rem;">GUARANTEE 01</span>
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Locked Renewal Rates</h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Annual tools purchased on sale renew at the same promotional discount rate for life without surprise price hikes.
+              </p>
+            </div>
+
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; display: block; margin-bottom: 0.5rem;">GUARANTEE 02</span>
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Official GST Tax Invoicing</h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Input your corporate GSTIN at checkout to generate compliant Indian B2B tax invoices with instant input tax credit eligibility.
+              </p>
+            </div>
+
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-amber); font-weight: 700; display: block; margin-bottom: 0.5rem;">GUARANTEE 03</span>
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Instant Vault Archiving</h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                All promo codes and discount licenses receive the same permanent archive storage and redownload rights in your License Vault.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Deals FAQ -->
+      <section class="section-wrapper">
+        <div class="container">
+          <div class="section-header-block" style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
+            <h2 class="section-heading-title" style="margin-bottom: 0.5rem;">Commercial Deals FAQ</h2>
+            <p class="section-subtext">
+              Frequently asked questions on discount coupons, volume packages, and refund policies
+            </p>
+          </div>
+
+          <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                Can coupon codes like TECH20 be stacked with current discounts?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Yes. Enter coupon code TECH20 during checkout to take an additional 20% off already discounted prices.
+              </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                What is the refund policy on discounted licenses?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                We offer a 14-day technical satisfaction guarantee on all software tools and antivirus suites if they fail to meet your system specifications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enterprise Volume Quote Banner -->
+      <section class="section-wrapper" style="padding-top: 1rem;">
+        <div class="container">
+          <div style="background: linear-gradient(135deg, #091326 0%, #0d1e3d 100%); border-radius: var(--radius-sm); padding: 3rem 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+            <div>
+              <span class="badge-mono cyan" style="margin-bottom: 0.75rem;">CUSTOM BUNDLE QUOTES</span>
+              <h3 style="font-size: 1.85rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">
+                Need a tailored multi-software bundle for your engineering team
+              </h3>
+              <p style="color: #94a3b8; font-size: 0.95rem; max-width: 540px; line-height: 1.5;">
+                Combine KernelWorks Studio, CipherNest Security, and DataForge Utility into a unified team package with consolidated billing.
+              </p>
+            </div>
+            <a href="#/software" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">
+              Browse Full Catalog
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   `;
 }

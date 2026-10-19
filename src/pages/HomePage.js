@@ -12,11 +12,11 @@ export function renderHomePage() {
           <div class="hero-content">
             <h1 class="hero-title">
               Software, ready <br>
-              <span class="highlight-line">when you are.</span>
+              <span class="highlight-line">when you are</span>
             </h1>
 
             <p class="hero-lead">
-              Discover professional software, trusted antivirus solutions, and engineering literature. Purchase with transparent INR pricing, access keys immediately, and manage your licenses in one place.
+              Discover professional software, trusted antivirus solutions, and engineering literature. Purchase with transparent INR pricing, access keys immediately, and manage your licenses in one place
             </p>
 
             <div class="hero-cta-group">
@@ -58,12 +58,12 @@ export function renderHomePage() {
             </div>
           </div>
 
-          <!-- Hero Right Column: Classy High-End Workstation Showcase -->
+          <!-- Hero Right Column: Classy High-End Executive Workstation Showcase -->
           <div class="hero-classy-showcase">
             <div class="hero-image-wrapper">
               <img 
-                src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" 
-                alt="Modern engineered software development and security workstation" 
+                src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1600&q=85" 
+                alt="Executive bright modern architectural workstation" 
                 class="hero-classy-img"
                 loading="eager"
               />
@@ -293,6 +293,130 @@ export function renderHomePage() {
               <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
                 Your purchased software, serial keys, and SHA-256 installer checksums are archived in your account portal for permanent redownloads.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enterprise Infrastructure Standards -->
+      <section class="section-wrapper">
+        <div class="container">
+          <div class="section-header-block">
+            <div>
+              <h2 class="section-heading-title">Enterprise Infrastructure Standards</h2>
+              <p class="section-subtext">
+                Direct native binary distributions verified against tamper-proof SHA-256 integrity hashes with full GST tax compliance
+              </p>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 1rem;">
+            <div style="padding: 1.5rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-lime); font-weight: 700; display: block; margin-bottom: 0.5rem;">01 / PROTOCOL</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.35rem;">Airgap License Delivery</h4>
+              <p style="font-size: 0.85rem; color: var(--text-medium); line-height: 1.5;">
+                Every tool includes offline cryptographic activation keys (.vkey) designed for secured corporate firewalls
+              </p>
+            </div>
+
+            <div style="padding: 1.5rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; display: block; margin-bottom: 0.5rem;">02 / INTEGRITY</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.35rem;">SHA-256 Checksums</h4>
+              <p style="font-size: 0.85rem; color: var(--text-medium); line-height: 1.5;">
+                Cryptographically signed installers accompanied by public hashes for verifiable automated builds
+              </p>
+            </div>
+
+            <div style="padding: 1.5rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-amber); font-weight: 700; display: block; margin-bottom: 0.5rem;">03 / TAXATION</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.35rem;">18% Integrated GST</h4>
+              <p style="font-size: 0.85rem; color: var(--text-medium); line-height: 1.5;">
+                Instant automated B2B tax invoices with GSTIN identification and full input tax credit eligibility
+              </p>
+            </div>
+
+            <div style="padding: 1.5rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: #8b5cf6; font-weight: 700; display: block; margin-bottom: 0.5rem;">04 / RECOVERY</span>
+              <h4 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.35rem;">License Vault Access</h4>
+              <p style="font-size: 0.85rem; color: var(--text-medium); line-height: 1.5;">
+                Permanent access to your software licenses and installation binaries from any authenticated session
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enterprise FAQ Section -->
+      <section class="section-wrapper alt-bg">
+        <div class="container">
+          <div class="section-header-block" style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
+            <h2 class="section-heading-title" style="margin-bottom: 0.5rem;">Frequently Asked Questions</h2>
+            <p class="section-subtext">
+              Common questions regarding licensing, offline airgap verification, and enterprise procurement
+            </p>
+          </div>
+
+          <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                How are digital licenses delivered after checkout?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Upon payment confirmation, your cryptographic serial tokens, offline keyfiles (.vkey), and direct download links are immediately displayed on screen, emailed, and archived in your License Vault.
+              </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                Can these software tools and antivirus packages operate completely offline?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Yes. All tools on Valence support air-gapped authentication via Ed25519 digital signature validation without requiring recurring internet connections or DRM surveillance.
+              </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                Are payments and invoices compliant with Indian GST?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Yes. All pricing is quoted transparently in Indian Rupees (₹ INR) inclusive of 18% Integrated GST. Businesses can input their company GSTIN during checkout to generate official input tax credit invoices.
+              </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                Can licenses be transferred to a new workstation or server?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Yes. Perpetual and multi-device licenses allow deactivation from old hardware and instant key re-issuance through your License Vault with zero administrative delays.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Enterprise Consultation CTA Banner -->
+      <section class="section-wrapper" style="padding-top: 1rem;">
+        <div class="container">
+          <div style="background: linear-gradient(135deg, #091326 0%, #0d1e3d 100%); border-radius: var(--radius-sm); padding: 3rem 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; box-shadow: 0 16px 36px rgba(15, 23, 42, 0.15);">
+            <div>
+              <span class="badge-mono cyan" style="margin-bottom: 0.75rem;">ENTERPRISE PROCUREMENT</span>
+              <h3 style="font-size: 1.85rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">
+                Need custom volume licensing or multi-seat deployment
+              </h3>
+              <p style="color: #94a3b8; font-size: 0.95rem; max-width: 540px; line-height: 1.5;">
+                Speak with our technical engineering dispatch team for airgap deployment assistance, custom procurement contracts, and volume discounts.
+              </p>
+            </div>
+
+            <div style="display: flex; gap: 1rem; align-items: center;">
+              <a href="#/security" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">
+                Explore Security Bundles
+              </a>
+              <a href="#/deals" class="btn btn-secondary" style="background: transparent; color: #ffffff; border-color: #334155; padding: 0.75rem 1.5rem;">
+                Commercial Deals
+              </a>
             </div>
           </div>
         </div>

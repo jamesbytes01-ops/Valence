@@ -83,6 +83,98 @@ export function renderEbooksPage() {
           </div>
         </div>
       </section>
+
+      <!-- DRM-Free Digital Asset Guarantees -->
+      <section class="section-wrapper alt-bg">
+        <div class="container">
+          <div class="section-header-block">
+            <div>
+              <h2 class="section-heading-title">DRM-Free Digital Asset Standards</h2>
+              <p class="section-subtext">
+                Permanent ownership with zero restrictive reader apps, private GitHub code repositories, and vector architecture schematics
+              </p>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1rem;">
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-lime); font-weight: 700; display: block; margin-bottom: 0.5rem;">FORMAT 01</span>
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Vector PDF &amp; EPUB</h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Crisp typographic vector layouts optimized for high-density 4K displays, tablets, and e-ink e-readers with zero DRM encryption.
+              </p>
+            </div>
+
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; display: block; margin-bottom: 0.5rem;">FORMAT 02</span>
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Executable Sandboxes</h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Every chapter includes companion Go, Rust, and Python Docker containers demonstrating distributed consensus and memory layout principles.
+              </p>
+            </div>
+
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-amber); font-weight: 700; display: block; margin-bottom: 0.5rem;">FORMAT 03</span>
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Lifetime Free Errata</h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                As cloud primitives and kernel subsystems evolve, updated revision releases are automatically delivered to your License Vault.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Compendiums FAQ -->
+      <section class="section-wrapper">
+        <div class="container">
+          <div class="section-header-block" style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
+            <h2 class="section-heading-title" style="margin-bottom: 0.5rem;">Technical Compendiums FAQ</h2>
+            <p class="section-subtext">
+              Common questions regarding e-book formats, code licensing, and team sharing
+            </p>
+          </div>
+
+          <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                Can I read these compendiums on Kindle or Apple Books?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Yes. Downloads include standard DRM-free .epub and .pdf files compatible with Kindle, Apple Books, Kobo, and desktop PDF viewers.
+              </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                Can our engineering team use the included code sandboxes in our proprietary codebase?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Yes. All accompanying code sandboxes and consensus implementations are licensed under permissive MIT/Apache-2.0 terms for commercial use.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Engineering Team Library Banner -->
+      <section class="section-wrapper" style="padding-top: 1rem;">
+        <div class="container">
+          <div style="background: linear-gradient(135deg, #091326 0%, #0d1e3d 100%); border-radius: var(--radius-sm); padding: 3rem 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+            <div>
+              <span class="badge-mono lime" style="margin-bottom: 0.75rem;">TEAM LIBRARY PASS</span>
+              <h3 style="font-size: 1.85rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">
+                Distribute technical literature across your engineering teams
+              </h3>
+              <p style="color: #94a3b8; font-size: 0.95rem; max-width: 540px; line-height: 1.5;">
+                Equip your senior architects and junior engineers with canonical systems references, architecture blueprints, and consensus sandboxes.
+              </p>
+            </div>
+            <a href="#/deals" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">
+              Explore Bundle Pricing
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   `;
 }

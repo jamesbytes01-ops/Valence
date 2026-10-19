@@ -284,6 +284,107 @@ export function renderSecurityPage() {
           </div>
         </div>
       </section>
+
+      <!-- Zero-Trust Architecture Pillars -->
+      <section class="section-wrapper alt-bg">
+        <div class="container">
+          <div class="section-header-block">
+            <div>
+              <h2 class="section-heading-title">Airgap Endpoint Defense Architecture</h2>
+              <p class="section-subtext">
+                Continuous kernel behavioral telemetry without sending sensitive corporate files or documents to third-party clouds
+              </p>
+            </div>
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 1rem;">
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-lime); font-weight: 700; display: block; margin-bottom: 0.5rem;">PILLAR 01</span>
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Kernel-Level Sandboxing</h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Suspicious binaries and unauthorized crypto-locking attempts are trapped inside localized micro-VMs before write operations hit physical NVMe storage.
+              </p>
+            </div>
+
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-cyan); font-weight: 700; display: block; margin-bottom: 0.5rem;">PILLAR 02</span>
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Zero-Telemetry Guarantee</h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Unlike legacy cloud-based antivirus tools, your files and network sockets are analyzed locally on-device without cloud exfiltration.
+              </p>
+            </div>
+
+            <div style="padding: 1.75rem; background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm);">
+              <span class="mono" style="font-size: 0.72rem; color: var(--accent-amber); font-weight: 700; display: block; margin-bottom: 0.5rem;">PILLAR 03</span>
+              <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 0.4rem;">Emergency USB Rescue ISO</h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Every security license includes downloadable bootable rescue ISO images for disinfecting offline machines without booting the compromised OS.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Security FAQ -->
+      <section class="section-wrapper">
+        <div class="container">
+          <div class="section-header-block" style="text-align: center; max-width: 680px; margin: 0 auto 2.5rem;">
+            <h2 class="section-heading-title" style="margin-bottom: 0.5rem;">Security &amp; Antivirus FAQ</h2>
+            <p class="section-subtext">
+              Key questions about definitions, offline signature updates, and multi-device deployment
+            </p>
+          </div>
+
+          <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                How do signature updates work on air-gapped workstations?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                You can download signed offline micro-definition packages (.sigpack) from your License Vault and apply them via USB without connecting the protected workstation to the web.
+              </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                Will AegisRoot Antivirus slow down compiler builds or games?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                No. AegisRoot operates with a sub-40MB memory footprint and includes automated compiler directory exclusions and a low-overhead silent gaming mode.
+              </p>
+            </div>
+
+            <div style="background: #ffffff; border: 1px solid var(--border-subtle); border-radius: var(--radius-xs); padding: 1.25rem 1.5rem;">
+              <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; color: var(--text-high);">
+                Can I expand my device seats later?
+              </h4>
+              <p style="font-size: 0.88rem; color: var(--text-medium); line-height: 1.55;">
+                Yes. You can upgrade from the 3-device standard pack to 5 or 10 devices at any time through your License Vault at prorated rates.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Security Incident Dispatch Banner -->
+      <section class="section-wrapper" style="padding-top: 1rem;">
+        <div class="container">
+          <div style="background: linear-gradient(135deg, #091326 0%, #0d1e3d 100%); border-radius: var(--radius-sm); padding: 3rem 2.5rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem;">
+            <div>
+              <span class="badge-mono danger" style="margin-bottom: 0.75rem;">RAPID RESPONSE SLA</span>
+              <h3 style="font-size: 1.85rem; font-weight: 800; color: #ffffff; margin-bottom: 0.5rem;">
+                Need enterprise firewall or multi-node infrastructure quotes
+              </h3>
+              <p style="color: #94a3b8; font-size: 0.95rem; max-width: 540px; line-height: 1.5;">
+                Direct consultation with security architects for customized firewall hardware deployments, compliance reports, and SLA contracts.
+              </p>
+            </div>
+            <a href="#/deals" class="btn btn-primary" style="padding: 0.75rem 1.5rem;">
+              Request Enterprise Pack
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   `;
 }

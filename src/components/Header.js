@@ -7,23 +7,6 @@ export function renderHeader(currentRoute = "#/") {
   const vaultCount = store.vault.length;
 
   return `
-    <!-- Top System Telemetry Bar -->
-    <div class="top-system-bar">
-      <div class="container">
-        <div class="top-system-bar-left">
-          <span><span class="status-dot"></span> VALENCE GATEWAY v4.8 ONLINE</span>
-          <span>LATENCY: <strong>14ms</strong></span>
-          <span>SHA-256 AUTHENTICATED CHANNELS</span>
-        </div>
-        <div class="top-system-bar-right">
-          <span>CURRENCY: <strong>₹ INR (INDIAN RUPEE)</strong></span>
-          <a href="#/vault" class="vault-trigger-link mono" id="top-vault-link">
-            [ LICENSE VAULT: ${vaultCount} ACTIVE ]
-          </a>
-        </div>
-      </div>
-    </div>
-
     <!-- Main Sticky Header -->
     <header class="site-header" id="site-header">
       <div class="container header-container">
@@ -36,7 +19,7 @@ export function renderHeader(currentRoute = "#/") {
             </svg>
           </div>
           <div class="brand-text">
-            <span class="brand-name">VALENCE<span>.IO</span></span>
+            <span class="brand-name">VALENCE<span> IO</span></span>
             <span class="brand-tagline-sub">ENGINEERED SOFTWARE &amp; LICENSES</span>
           </div>
         </a>
