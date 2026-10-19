@@ -210,7 +210,7 @@ export function getProductArtwork(type, accent = "#00F076") {
             <polygon points="76,44 88,68 64,68" stroke="#00E5FF" stroke-width="1" fill="none"/>
             <circle cx="76" cy="60" r="3" fill="${accent}"/>
             
-            <text x="34" y="105" fill="#FFFFFF" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="8.5">ATLAS VOL. VIII</text>
+            <text x="34" y="105" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-weight="700" font-size="8.5">ATLAS VOL. VIII</text>
             <text x="34" y="118" fill="#7588A3" font-family="JetBrains Mono, monospace" font-size="6.5">DISTRIBUTED SYSTEMS</text>
             <text x="34" y="128" fill="${accent}" font-family="JetBrains Mono, monospace" font-size="6.5">CONSENSUS ARCHITECTURE</text>
           </g>

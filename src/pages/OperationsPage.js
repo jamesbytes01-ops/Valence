@@ -11,54 +11,109 @@ export function getOperationsActiveTab() {
   return activeTab;
 }
 
+export const OPERATIONS_TABS = {
+  pgp: {
+    id: "pgp",
+    label: "PGP Public Key (0x7F8B92)",
+    badge: "VALENCE INFRASTRUCTURE // PGP TRUST RING",
+    badgeColor: "cyan",
+    title: "PGP Master Public Key & Binary Verification",
+    desc: "Official master public certificate (0x7F8B92), digital binary signing hashes, and trust ring verification protocols",
+    telemetry: [
+      { label: "PGP FINGERPRINT", value: "0x7F8B92C4E10A", color: "var(--accent-cyan)" },
+      { label: "SIGNING ALGORITHM", value: "RSA 4096 / ED25519", color: "var(--accent-lime)" }
+    ]
+  },
+  airgap: {
+    id: "airgap",
+    label: "Air-Gapped Key Generation",
+    badge: "OFFLINE ENCLAVES // AIR-GAPPED PROTOCOL",
+    badgeColor: "lime",
+    title: "Air-Gapped Key Generation & Validation",
+    desc: "Zero-telemetry cryptographic enrollment, hardware-locked offline signature validation, and secure airgap token dispatch",
+    telemetry: [
+      { label: "ISOLATION PROTOCOL", value: "AIRGAP ED25519", color: "var(--accent-lime)" },
+      { label: "OUTGOING TELEMETRY", value: "0% ZERO-PING", color: "var(--accent-cyan)" }
+    ]
+  },
+  refund: {
+    id: "refund",
+    label: "Refund & Revocation Protocol",
+    badge: "CONSUMER PROTECTION // REVOCATION LEDGER",
+    badgeColor: "amber",
+    title: "Refund & License Revocation Protocol",
+    desc: "14-day technical money-back guarantee terms, Certificate Revocation List (CRL) broadcast, and instant seat deactivation",
+    telemetry: [
+      { label: "SLA GUARANTEE", value: "14-DAY FULL REFUND", color: "var(--accent-amber)" },
+      { label: "CRL SYNCHRONIZATION", value: "INSTANT BROADCAST", color: "var(--accent-lime)" }
+    ]
+  },
+  invoicing: {
+    id: "invoicing",
+    label: "Automated Invoicing (GST)",
+    badge: "TAX REGULATORY // STATUTORY COMPLIANCE",
+    badgeColor: "lime",
+    title: "Automated Indian GST Invoicing Architecture",
+    desc: "18% Integrated GST statutory compliance, B2B GSTIN input tax credit validation, and automated SAC 997331 e-invoicing",
+    telemetry: [
+      { label: "TAX JURISDICTION", value: "18% IGST (SAC 997331)", color: "var(--accent-lime)" },
+      { label: "COMPANY GSTIN", value: "27AAACV9842F1Z8", color: "var(--accent-cyan)" }
+    ]
+  },
+  api: {
+    id: "api",
+    label: "API Developer Sandbox",
+    badge: "DEVELOPER APIS // RUNTIME SANDBOX",
+    badgeColor: "cyan",
+    title: "API Developer Sandbox & Webhooks",
+    desc: "Programmatic license procurement, token generation endpoints, webhook event listeners, and live interactive test sandbox",
+    telemetry: [
+      { label: "API GATEWAY", value: "TLS 1.3 REST API", color: "var(--accent-lime)" },
+      { label: "RATE LIMIT", value: "1,000 REQ / MIN", color: "var(--accent-cyan)" }
+    ]
+  }
+};
+
 export function renderOperationsPage(initialTab = null) {
-  if (initialTab) {
+  if (initialTab && OPERATIONS_TABS[initialTab]) {
     activeTab = initialTab;
   }
 
+  const currentTab = OPERATIONS_TABS[activeTab] || OPERATIONS_TABS.pgp;
+
   return `
     <div class="page-container">
-      <!-- Operations Hero Banner -->
+      <!-- Operations Dynamic Hero Banner -->
       <div class="page-hero-banner">
         <div class="container">
           <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1.5rem;">
             <div>
-              <span class="badge-mono cyan" style="margin-bottom: 0.75rem;">VALENCE INFRASTRUCTURE // PROTOCOL SPECS</span>
-              <h1 class="page-hero-title">Technical Operations &amp; Platform Architecture</h1>
+              <span class="badge-mono ${currentTab.badgeColor}" style="margin-bottom: 0.75rem;">${currentTab.badge}</span>
+              <h1 class="page-hero-title">${currentTab.title}</h1>
               <p class="page-hero-desc">
-                Public PGP trust ring, air-gapped cryptographic signing protocols, automated Indian GST invoicing, and developer sandbox APIs.
+                ${currentTab.desc}
               </p>
             </div>
 
             <div style="display: flex; gap: 1.25rem; align-items: center; background: #ffffff; padding: 1rem 1.5rem; border: 1px solid var(--border-subtle); border-radius: var(--radius-sm); box-shadow: 0 4px 16px rgba(0,0,0,0.04);">
               <div>
-                <span class="mono" style="font-size: 0.72rem; color: var(--text-muted); display: block;">GATEWAY PROTOCOL</span>
-                <strong class="mono" style="color: var(--accent-lime); font-size: 1rem;">TLS 1.3 // ED25519</strong>
+                <span class="mono" style="font-size: 0.72rem; color: var(--text-muted); display: block;">${currentTab.telemetry[0].label}</span>
+                <strong class="mono" style="color: ${currentTab.telemetry[0].color}; font-size: 0.95rem;">${currentTab.telemetry[0].value}</strong>
               </div>
               <div style="border-left: 1px solid var(--border-subtle); padding-left: 1.25rem;">
-                <span class="mono" style="font-size: 0.72rem; color: var(--text-muted); display: block;">PGP FINGERPRINT</span>
-                <strong class="mono" style="color: var(--accent-cyan); font-size: 1rem;">0x7F8B92</strong>
+                <span class="mono" style="font-size: 0.72rem; color: var(--text-muted); display: block;">${currentTab.telemetry[1].label}</span>
+                <strong class="mono" style="color: ${currentTab.telemetry[1].color}; font-size: 0.95rem;">${currentTab.telemetry[1].value}</strong>
               </div>
             </div>
           </div>
 
           <!-- Technical Operations Navigation Tabs -->
-          <div style="display: flex; gap: 0.5rem; margin-top: 2rem; flex-wrap: wrap;" id="operations-tab-bar">
-            <button class="discovery-tab-btn op-tab-btn ${activeTab === 'pgp' ? 'active' : ''}" data-op-tab="pgp">
-              PGP Public Key (0x7F8B92)
-            </button>
-            <button class="discovery-tab-btn op-tab-btn ${activeTab === 'airgap' ? 'active' : ''}" data-op-tab="airgap">
-              Air-Gapped Key Generation
-            </button>
-            <button class="discovery-tab-btn op-tab-btn ${activeTab === 'refund' ? 'active' : ''}" data-op-tab="refund">
-              Refund &amp; Revocation Protocol
-            </button>
-            <button class="discovery-tab-btn op-tab-btn ${activeTab === 'invoicing' ? 'active' : ''}" data-op-tab="invoicing">
-              Automated Invoicing (GST)
-            </button>
-            <button class="discovery-tab-btn op-tab-btn ${activeTab === 'api' ? 'active' : ''}" data-op-tab="api">
-              API Developer Sandbox
-            </button>
+          <div class="op-tab-bar" id="operations-tab-bar">
+            ${Object.values(OPERATIONS_TABS).map(tab => `
+              <button class="op-tab-btn ${activeTab === tab.id ? 'active' : ''}" data-op-tab="${tab.id}">
+                ${tab.label}
+              </button>
+            `).join("")}
           </div>
         </div>
       </div>
